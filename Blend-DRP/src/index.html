@@ -14,33 +14,33 @@
   </head>
 
   <body>
-    <div class="container">
-      <h1>Welcome to Tauri!</h1>
-
-      <div class="row">
-        <a href="https://tauri.app" target="_blank">
-          <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
-        </a>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-          target="_blank"
-        >
-          <img
-            src="/assets/javascript.svg"
-            class="logo vanilla"
-            alt="JavaScript logo"
-          />
-        </a>
-      </div>
-
-      <p>Click on the Tauri logo to learn more about the framework</p>
-
-      <form class="row" id="greet-form">
-        <input id="greet-input" placeholder="Enter a name..." />
-        <button type="submit">Greet</button>
-      </form>
-
-      <p id="greet-msg"></p>
+    <div class="top-half-container">
+      <ul class="upload-list row">
+        <li class="upload-list-item">
+          <h4>Albedo/Diffuse</h4>
+          <input class="map-upload-input" type="file" accept=".jpg, .jpeg, .png">
+        </li>
+        <li class="upload-list-item">
+          <h4>Normal</h4>
+          <input class="map-upload-input" type="file" accept=".jpg, .jpeg, .png" 
+          title="Although nothing is actually done with the normal map, it's still nice to have so that the output directory immediatly contains everything you need.">
+        </li>
+        <li class="upload-list-item">
+          <h4>Metallic</h4>
+          <input class="map-upload-input" type="file" accept=".jpg, .jpeg, .png">
+        </li>
+        <li class="upload-list-item">
+          <h4>Roughness</h4>
+          <input class="map-upload-input" type="file" accept=".jpg, .jpeg, .png">
+        </li>
+        <li class="upload-list-item">
+          <h4>Ambient Occlusion</h4>
+          <input class="map-upload-input" type="file" accept=".jpg, .jpeg, .png">
+        </li>
+      </ul>
+    </div>
+    <div class="bottom-half-container">
+      <button class="export-button">Convert</button>
     </div>
   </body>
 </html>
